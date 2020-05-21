@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IGTI - Trabalho Prático Módulo 01</title>
+  </head>
+  <body>
+    <div>
+      <form>
+        <div class="range-container">
+          <label for="redInput">(R) Vermelho:</label>
+          <input
+            type="range"
+            id="redRange"
+            min="0"
+            max="255"
+            class="range"
+            onchange="handleRangeChange(this)"
+          />
+          <input type="text" id="redInput" class="colorInput" disabled />
+        </div>
+        <div class="range-container">
+          <label for="greenInput">(G) Verde:</label>
+          <input
+            type="range"
+            id="greenRange"
+            min="0"
+            max="255"
+            class="range"
+            onchange="handleRangeChange(this)"
+          />
+          <input type="text" id="greenInput" class="colorInput" disabled />
+        </div>
+        <div class="range-container">
+          <label for="blueInput">(B) Azul:</label>
+          <input
+            type="range"
+            id="blueRange"
+            min="0"
+            max="255"
+            class="range"
+            onchange="handleRangeChange(this)"
+          />
+          <input type="text" id="blueInput" class="colorInput" disabled />
+        </div>
+        <div class="canvas"></div>
+      </form>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
